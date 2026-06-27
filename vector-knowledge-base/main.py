@@ -38,7 +38,7 @@ def search(collection, query, n_results=3):
     return results["documents"][0]
 
 
-json_file = os.path.join(os.path.dirname(__file__), '..', 'day_07', 'output.json')
+json_file = os.path.join(os.path.dirname(__file__), '..', 'web-scraper-etl', 'output.json')
 chunks = load_chunks(json_file)
 collection = build_knowledge_base(chunks)
 
